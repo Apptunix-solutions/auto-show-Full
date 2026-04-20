@@ -113,7 +113,7 @@ export default function CarDetailPage() {
           <div className="lg:col-span-2 space-y-6">
             <div className="bg-card rounded-xl border p-6 animate-fade-in" style={{ animationDelay: "100ms" }}>
               <h2 className="font-display font-bold text-xl mb-4">المواصفات</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {specs.map((spec) => (
                   <div key={spec.label} className="text-center p-3 rounded-lg bg-muted/50">
                     <spec.icon className="w-5 h-5 text-primary mx-auto mb-2" />

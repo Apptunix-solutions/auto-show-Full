@@ -129,3 +129,26 @@
     @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
   }
 }
+
+/* ─── Custom Scrollbar ──────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.35);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.65);
+}
+::-webkit-scrollbar-corner {
+  background: hsl(var(--background));
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary) / 0.35) hsl(var(--background));
+}
